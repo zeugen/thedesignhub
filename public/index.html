@@ -7,60 +7,74 @@
     <title>The Design Hub</title>
     <link rel="stylesheet" href="/public/css/tailwind.css">
 </head>
-<body>
-    <h1 class="font-bold">Hello world</h1>
+<body class="bg-gray-100  font-body">
+    
     <!-- navigation wrapper -->
-    <nav>
-        <div class="nav__hamburger"></div>
-        <div class="nav__items">
-            <ul>
-                <li><a href="">who we are</a></li>
-                <li><a href="">what we offer</a></li>
-                <li><a href="">Projects</a></li>
-                <li><a href="">Contact</a></li>
-                <li><a href=""> <span>icon</span> <span>(+254 726 278 257)</span></a></li>
-            </ul>
-        </div>
-        <div class="nav__brand">The design hub.</div>
-    </nav>
+    <div class="wrapper">
+        
+        <nav class="flex justify-between items-center px-14 py-4  bg-white">
+            <a class="nav__hamburger block">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </a>
+            <!-- <div class="nav__items">
+                <ul>
+                    <li><a href="">who we are</a></li>
+                    <li><a href="">what we offer</a></li>
+                    <li><a href="">Projects</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href=""> <span>icon</span> <span>(+254 726 278 257)</span></a></li>
+                </ul>
+            </div> -->
+            <div class="nav__brand font-bold text-3xl uppercase">The design hub.</div>
+        </nav>
+    
 
     <!-- end navigation wrapper -->
     <!-- start header main -->
-    <div class="header-main">
-        <div>
+    <div class="header-main h-screen relative bg-cover bg-center  " style="background-image: url(./img/daniel-chen-SoNaNOFT974-unsplash.jpg);">
+        <!-- <img src="" alt="https://unsplash.com/photos/NvqYkDPE0Rw?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink" class="block"> -->
+        <div class="absolute ">
             <div class="header-main__title">
-                <H1 class="font-bold text-2xl">The design hub</H1>
+                <!-- <H1 class="font-bold text-2xl">The design hub</H1> -->
+
             </div>
         </div>
     </div>
     <!-- end header main -->
     <!-- start main -->
-    <main>
+    <main class="px-8">
         <!-- start who we are -->
-        <div>
-            <div class="section__description">
+        <div class=" sm:w-10/12 sm:mx-auto flex flex-col items-center mt-16">
+            <div class="section__description text-center">
                 <span></span>
-                <span class="inline-block">who we are</span class="block">
+                <span class="inline-block text-md tracking-wider md:text-lg font-semibold font-headerFont text-md uppercase tracking-wider">who we are</span class="block">
                 <span></span>
             </div>
-            <div class="section__title">
-                <h2>sammy & edwin founded the design hub on a few basic principles.</h2>
+            <div class="section__title text-center mt-6">
+                <h2 class="uppercase text-2xl px-4 md:text-3xl md:px-28 font-headerFont ">sammy & edwin founded the design hub <br> on a few basic principles.</h2>
             </div>
-            <div class="flex">
-                <img src="" alt="" class="block">
+            <!-- <div class="w-full flex mt-6 md:mt-12 flex-col md:flex-row"> -->
+            <div class="md:grid md:grid-cols-2 mt-12  ">
+                <div class="md:border-r-2 border-gray-200 md:pr-10">
+                    <img src="./img/julie-kwak-t_64epomhIs-unsplash.jpg" alt="https://unsplash.com/photos/t_64epomhIs?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink" class="">
+                </div>
                 
-                <div class="border-l-4">
-                    <div>
-                        <h3>Forward Thinking</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, harum. Architecto doloremque recusandae explicabo non sunt tenetur neque ad, maxime cum magni ducimus nemo, voluptatibus enim fugiat animi delectus dicta.</p>
-                    </div>
-                    <div>
-                        <h3 class="uppercase">Honesty</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum sed perferendis rem hic veniam quam labore blanditiis, vero quos quas.</p>
-                    </div>
-                    <div>
-                        <h3 class="uppercase">Enjoy the process</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate sunt nihil quidem, sed voluptates facilis reprehenderit corrupti inventore modi dicta beatae commodi. In, neque sed.</p>
+                <div class="md:pl-10 mt-10 sm:mt-0">
+                    <div class=" ">
+                        <div class="">
+                            <h3 class="font-bold uppercase text-2xl sm:text-2.5xl mb-2 sm:mb-2 ">Forward Thinking</h3>
+                            <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, harum. Architecto doloremque recusandae explicabo non sunt tenetur neque ad, maxime cum magni ducimus nemo, voluptatibus enim fugiat animi delectus dicta.</p>
+                        </div>
+                        <div class="mt-9 sm:mt-12">
+                            <h3 class="uppercase font-bold text-2xl sm:text-2.5xl mb-2 sm:mb-2">Honesty</h3>
+                            <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum sed perferendis rem hic veniam quam labore blanditiis, vero quos quas.</p>
+                        </div>
+                        <div class="mt-9 sm:mt-12">
+                            <h3 class="uppercase font-bold text-2xl sm:text-2.5xl mb-2 sm:mb-2">Enjoy the process</h3>
+                            <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate sunt nihil quidem, sed voluptates facilis reprehenderit corrupti inventore modi dicta beatae commodi. In, neque sed.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -93,6 +107,8 @@
                 </div>
             </div>
             <!-- end cofounders -->
+        </div>
+        <!-- end who we are -->
             <!-- bottom wrapper -->
             <section>
             <!-- get in touch -->
@@ -132,9 +148,11 @@
             </footer>
             <!-- end footer -->
             <!-- end bottom wrapper -->
-        </div>
-        <!-- end who we are -->
+
     </main>
     <!-- end main -->
+</div>
+    <!-- end wrapper -->
+
 </body>
 </html>
